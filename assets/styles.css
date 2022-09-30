@@ -1,0 +1,228 @@
+/* Import Font */
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+/* End Import Font */
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 25px;
+  overflow: auto;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #faf3f3;
+}
+
+header {
+  display: inline;
+}
+
+/* CSS Header */
+nav.sticky-top {
+  background-color: #faf3f3;
+  position: sticky;
+  top: 0;
+}
+
+.nav-color {
+  box-shadow: 0 4px 8px 0 rgba(167, 187, 199, 0.6);
+}
+
+.container {
+  width: 100%;
+  padding: 5px;
+}
+
+.navbar {
+  overflow: hidden;
+}
+
+.brand {
+  font-family: satisfy;
+  color: #da7f8f !important;
+}
+
+.nav-link.brand:hover {
+  background-color: transparent !important;
+}
+
+.navbar .nav-item {
+  float: left;
+  text-align: center;
+  list-style-type: none;
+  padding: 10px;
+}
+.navbar-right {
+  float: right;
+}
+.nav-link:hover {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #a7bbc7;
+}
+.nav-link {
+  color: #000000;
+  padding: 10px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+/* End CSS Header */
+
+/* Jumbotron */
+.jumbotron {
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.jumbotron > h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000000;
+}
+.highlight {
+  color: #da7f8f;
+}
+/* End Jumbotron */
+
+/* CSS Main Content */
+#content {
+  float: left;
+  width: 70%;
+  margin-bottom: 32px;
+}
+
+.card {
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: 0 4px 8px 0 rgba(167, 187, 199, 0.6);
+}
+
+.card .card-title {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.card-body {
+  display: flex;
+
+  /* Properti lainnya */
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 32px;
+}
+.card-item {
+  flex-basis: 25%;
+  text-align: center;
+}
+
+.card-item > img {
+  width: 50%;
+  height: auto;
+}
+
+.card-item > .card-text {
+  display: inline;
+  text-align: center;
+}
+
+.card-title > h1 {
+  margin: 0;
+}
+
+.card-title::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #da7f8f;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+/* End CSS Main Content */
+
+/* Side Content */
+aside .profile {
+  text-align: center;
+}
+.profile img {
+  width: 200px;
+}
+.profile.card {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(167, 187, 199, 0.6);
+  padding: 20px;
+}
+aside {
+  float: right;
+  width: 30%;
+  padding-left: 10px;
+}
+
+aside > img {
+  width: 100%;
+  height: 50vh;
+}
+
+.center {
+  margin: auto;
+}
+
+.table-profile th {
+  text-align: left;
+}
+.table-profile th::after {
+  content: ":";
+}
+/* End Side Content */
+
+/* Footer */
+footer p {
+  background-color: #e1e5ea;
+  color: #000000;
+  margin-bottom: 0;
+  padding: 16px;
+  text-align: center;
+}
+/* End Footer */
+
+/* Mobile Ver */
+@media screen and (max-width: 1200px) {
+  .navbar {
+    padding-left: 0;
+  }
+  .nav-item {
+    display: block;
+  }
+
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .jumbotron > h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .jumbotron > h1 {
+    font-size: 16px;
+  }
+  .jumbotron > p {
+    font-size: 12px;
+  }
+}
+/* End Mobile Ver */
