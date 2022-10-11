@@ -123,6 +123,7 @@ nav.sticky-top {
 .card-item {
   flex-basis: 25%;
   text-align: center;
+  flex-direction: row;
 }
 
 .card-item > img {
@@ -130,8 +131,8 @@ nav.sticky-top {
   height: auto;
 }
 
-.card-item > .card-text {
-  display: inline;
+.card-item .card-text {
+  display: block;
   text-align: center;
 }
 
@@ -147,6 +148,33 @@ nav.sticky-top {
   margin: auto;
   padding-bottom: 5px;
   margin-bottom: -8px;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.title {
+  font-weight: bold;
+}
+
+/* Project */
+
+.project {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.card-item#project-card-item {
+  flex-basis: 75%;
+  text-align: center;
+}
+
+img.img-project {
+  box-shadow: 0 4px 8px 0 rgba(167, 187, 199, 0.6);
+  width: 100%;
 }
 /* End CSS Main Content */
 
@@ -214,6 +242,17 @@ footer p {
 @media screen and (max-width: 720px) {
   .jumbotron > h1 {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .card-body {
+    flex-direction: column;
+  }
+
+  .card-item > img.icon {
+    width: 25%;
+    height: auto;
   }
 }
 
